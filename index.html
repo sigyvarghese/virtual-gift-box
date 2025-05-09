@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Gift Box</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div id="container"></div>
+
+<!-- Modal -->
+<div class="modal" id="giftModal">
+  <div class="modal-content">
+    <span id="closeBtn">&times;</span>
+    <h2 style="font-size:18px;">You've received a gift! 💝</h2>
+    <p id="quote">"Love is composed of a single soul inhabiting two bodies." – Aristotle</p>
+    
+    <input type="file" accept="image/gif" id="gifInput">
+    <img src="" alt="Gift GIF" id="giftGif"/>
+
+    <textarea id="messageBox" placeholder="Write your message..." rows="3"></textarea>
+    <div id="emojiContainer">
+      <span class="emoji" onclick="addEmoji('💖')">💖</span>
+      <span class="emoji" onclick="addEmoji('🎉')">🎉</span>
+      <span class="emoji" onclick="addEmoji('🥰')">🥰</span>
+      <span class="emoji" onclick="addEmoji('✨')">✨</span>
+    </div>
+    <button id="shareBtn">Share This Gift</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three @0.155.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
